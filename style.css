@@ -1,0 +1,258 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#mainContainer{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.img_nature{
+    width: 100%;
+    max-height: 100vh;
+} 
+
+#container{
+    background-color: rgb(149, 178, 192);
+    position: absolute;
+    z-index: 2;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+    border-radius: 15px;
+}
+
+h1{
+    text-align: center;
+}
+
+#header{
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.todo-item.delition{
+    animation: opacity 1s ease-in-out;
+}
+
+.plus{
+    font-size: 25px;
+    position: absolute;
+    top: -5px;
+    left: 3px;
+}
+
+.plus:hover{
+    color: white;
+}
+
+.inp1{
+  width: 350px;  
+}
+
+.just_text{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.telo {
+    margin: 20px;
+}
+
+.tasks {
+    border: 1px solid black;
+    background-color: rgb(206, 226, 206);
+    border-radius: 15px 0 0 15px;
+    padding: 4px 0 4px 4px;
+    display: flex;
+    height: 23px;
+}
+
+
+.delete {
+    border: 1px solid red;
+    background-color: rgb(206, 226, 206);
+    border-radius: 15px 0 0 15px;
+    padding: 4px 0 4px 4px;
+    display: flex;
+    height: 23px;
+}
+
+
+.box{
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-right: 2px;
+    transition: .3s linear;
+}
+
+.box:hover{
+    background-color: green;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+
+.footer {
+    margin: 20px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.footItems:hover{
+    display: inline-block;
+    color: rgb(92, 131, 95);
+    cursor: pointer;
+}
+
+.items:hover{
+    cursor: default;
+    color: black;
+}
+
+/*
+/////////////
+Remove picture
+/////////////
+*/
+
+
+
+.picture{
+    width: 20px;
+    position:absolute;
+    left: 355px;
+    cursor: pointer;
+}
+
+
+
+/* SPAN */
+.span{
+    width: 290px;
+    height: 17px;
+    padding: 0 0 4px 4px;
+}
+
+
+
+/*Remove Panel*/
+
+.removePanel{
+    display: flex;
+    position: absolute;
+    width: 72px;
+    height: 40px;
+    z-index: 2;
+    background: blanchedalmond;
+    display: inline-block;
+    left: 364px;
+}
+
+.panelSelect{
+    width: 70px;
+    justify-content: center;
+    display: flex;
+    color: rgb(34, 134, 151);
+    cursor: pointer;
+    border: 1px solid orange;
+}
+
+.panelSelect:hover{
+    background: rgb(94, 153, 28);
+    color: rgb(120, 233, 233);
+}
+
+
+.img{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 352px;
+    margin-top: 4px;
+}
+
+
+
+
+.todo-item {
+    display: flex;
+    
+}
+
+.description{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    color: floralwhite;
+}
+
+
+.btn-complete{
+    padding: 5px;
+}
+
+.buttons input {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.buttons {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.buttons button{
+    outline: none;
+    border: none;
+    background-color: crimson;
+    color: #fff;
+    cursor: pointer;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.todo-item{
+    display: flex;
+    width: 380px;
+    min-height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 2px 10px 2px 10px;
+    background-color: orange;
+}
+
+
+.todo-item.delition{
+    animation: opacity .5s ease-in-out;
+}
+
+.todo-item.checked{
+    background-color: darkgray;
+    opacity: 0.5;
+}
+
+
+@keyframes opacity {
+    from {
+        opacity: 1;
+    } 
+    to {
+        opacity: 0;
+    }
+}
